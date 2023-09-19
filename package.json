@@ -1,0 +1,21 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Homework Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test-chrome-headed-iPhoneX": "cypress run --headed --browser chrome --config-file cypressIPhoneX.config.js",
+    "test-chrome-headed-mac15": "cypress run --headed --browser chrome --config-file cypressMacBook15.config.js",
+    "test-chrome-headless-iPhoneX": "cypress run --headless --browser chrome --config-file cypressIPhoneX.config.js",
+    "test-chrome-headless-mac15": "cypress run --headed --browser chrome --config-file cypressMacBook15.config.js",
+    "test-edge-headed-iPhoneX": "cypress run --headed --browser edge --config-file cypressIPhoneX.config.js",
+    "test-edge-headed-mac15": "cypress run --headed --browser edge --config-file cypressMacBook15.config.js",
+    "test-edge-headless-iPhoneX": "cypress run --headless --browser edge --config-file cypressIPhoneX.config.js",
+    "test-edge-headless-mac15": "cypress run --headed --browser edge --config-file cypressMacBook15.config.js"
+  },
+  "author": "Igor Smirnov",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.2.0"
+  }
+}
