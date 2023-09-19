@@ -5,10 +5,10 @@ Cypress.Commands.add("login", (email, password) => {
   cy.get("form > .ml-2").click();
 });
 
-Cypress.Commands.add("addToFavorites", (bookName) => {
-  cy.login("bropet@mail.ru", "123");
-  cy.contains(bookName).should("be.visible");
-  cy.get(
-    '[href="book/2fb96b99-cf9b-45af-81ff-169a3b3c9068"] > .h-100 > .card-footer > .btn'
-  ).click();
+Cypress.Commands.add("addNewBook", (book, description, author) => {
+  cy.contains("Add new").click();
+  cy.get("#title").type(book);
+  cy.get("#description").type(description);
+  cy.get("#authors").type(author);
+  cy.get("form > .ml-2").click();
 });
